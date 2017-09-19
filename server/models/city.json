@@ -1,0 +1,33 @@
+{
+  "name": "city",
+  "plural": "cities",
+  "base": "BasePersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_city": {
+      "type": "number",
+      "required": true,
+      "id": true
+    },
+    "location": {
+      "type": "geopoint"
+    },
+    "desc_city": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
