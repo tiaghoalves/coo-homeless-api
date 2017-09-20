@@ -1,6 +1,16 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  }
+	"db": {
+		"name": "db",
+		"connector": "memory"
+	},
+	"CooHomelessMysql": {
+		"host": "localhost",
+		"port": 1306,
+		"url": "",
+  	"database": "CooHomelessDB",
+		"password": "alves",
+		"name": "CooHomelessMysql",
+		"user": "root",
+		"connector": "mysql"
+	}
 }
