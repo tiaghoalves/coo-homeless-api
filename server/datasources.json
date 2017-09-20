@@ -5,7 +5,7 @@
 	},
 	"CooHomelessMysql": {
 		"host": "localhost",
-		"port": 1306,
+		"port": 3306,
 		"url": "",
   	"database": "CooHomelessDB",
 		"password": "alves",
