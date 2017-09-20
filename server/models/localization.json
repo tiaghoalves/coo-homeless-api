@@ -1,0 +1,35 @@
+{
+	"name": "localization",
+	"plural": "localizations",
+	"base": "PersistedModel",
+	"idInjection": false,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"id_localization": {
+			"type": "number",
+			"required": true,
+			"id": true
+		},
+		"location": {
+			"type": "geopoint"
+		},
+		"created_at": {
+			"type": "date"
+		},
+		"updated_at": {
+			"type": "date"
+		}
+	},
+	"validations": [],
+	"relations": {
+		"collaborators": {
+      "type": "hasOne",
+      "model": "collaborator",
+			"foreignKey": "id_collaborator"
+    }
+	},
+	"acls": [],
+	"methods": {}
+}

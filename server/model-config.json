@@ -35,20 +35,12 @@
 		"dataSource": "db",
 		"public": false
 	},
-	"colaborator": {
-		"dataSource": "CooHomelessMysql",
+	"contributor": {
+		"dataSource": "db",
 		"public": true
 	},
-	"organization": {
-		"dataSource": "CooHomelessMysql",
-		"public": true
-	},
-	"homeless": {
-		"dataSource": "CooHomelessMysql",
-		"public": true
-	},
-	"city": {
-		"dataSource": "CooHomelessMysql",
+	"localization": {
+		"dataSource": "db",
 		"public": true
 	}
 }

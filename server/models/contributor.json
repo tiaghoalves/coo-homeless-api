@@ -1,0 +1,35 @@
+{
+	"name": "contributor",
+	"plural": "contributors",
+	"base": "PersistedModel",
+	"idInjection": false,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"id_contributor": {
+			"type": "number",
+			"required": true,
+			"id": true
+		},
+		"name": {
+			"type": "string"
+		},
+		"created_at": {
+			"type": "date"
+		},
+		"updated_at": {
+			"type": "date"
+		}
+	},
+	"validations": [],
+	"relations": {
+		"localizations": {
+			"type": "hasMany",
+			"foreignKey": "id_localization",
+			"model": "localization"
+		}
+	},
+	"acls": [],
+	"methods": {}
+}
