@@ -1,6 +1,5 @@
 -- Create a new database called 'CooHomelessDB'
 USE CooHomelessDB;
-
 CREATE DATABASE CooHomelessDB
 
 -- Create a new table called 'ORGANIZATION'
@@ -19,7 +18,7 @@ CREATE TABLE COLLABORATOR
 (
     ID_COLLABORATOR INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, -- primary key column
     DESC_COLLABORATOR [NVARCHAR](50) NOT NULL,
-    Column2 [NVARCHAR](50) NOT NULL
+    CPF INTEGER NOT NULL
     -- specify more columns here
 );
 GO
