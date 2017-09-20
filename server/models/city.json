@@ -1,6 +1,7 @@
 {
   "name": "city",
-  "base": "PersistedModel",
+  "plural": "cities",
+  "base": "BasePersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
@@ -8,11 +9,21 @@
   "properties": {
     "id_city": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id": true
     },
     "location": {
-      "type": "geopoint",
+      "type": "geopoint"
+    },
+    "desc_city": {
+      "type": "string",
       "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
     }
   },
   "validations": [],
