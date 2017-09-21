@@ -24,11 +24,11 @@
 	},
 	"validations": [],
 	"relations": {
-		"collaborators": {
-      "type": "hasOne",
-      "model": "collaborator",
-			"foreignKey": "id_collaborator"
-    }
+		"contributors": {
+			"type": "hasOne",
+			"model": "contributor",
+			"foreignKey": "id_contributor"
+		}
 	},
 	"acls": [],
 	"methods": {}

@@ -1,5 +1,6 @@
 'use strict';
 
-module.exports = (Collaborator) => {
-    
+module.exports = (Contributor) => {
+	console.log(Contributor);
+
 }
