@@ -4,6 +4,12 @@
 			"loopback/common/models",
 			"loopback/server/models",
 			"../common/models",
+			"./models/contributor",
+			"./models/localization",
+			"./models/donation",
+			"./models/homeless",
+			"./models/meeting",
+			"./models/organization",
 			"./models"
 		],
 		"mixins": [
