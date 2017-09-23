@@ -15,20 +15,12 @@
 		"name": {
 			"type": "string"
 		},
-		"created_at": {
-			"type": "date"
-		},
-		"updated_at": {
-			"type": "date"
+		"cpf": {
+			"type": "string"
 		}
 	},
 	"validations": [],
 	"relations": {
-		"localizations": {
-			"type": "hasMany",
-			"foreignKey": "id_localization",
-			"model": "localization"
-		}
 	},
 	"acls": [],
 	"methods": {}
