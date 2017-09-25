@@ -20,7 +20,7 @@ npm install
 Maybe npm will need some permissions to install all packages, so run with `sudo` or other equivalent command depends on your OS.
 
 ### Start up enviroment
-A loopback project uses the `server/datasourcers.json` file to do the database connection and store other important configuration, see the docs [here](https://loopback.io/doc/en/lb2/Advanced-topics-data-sources.html). The datasource need to be configured with your own properties values. The current file you find here [here](https://github.com/tiaghoalves/coo-homeless-api/blob/master/server/datasources.json) 
+A loopback project uses the `server/datasourcers.json` file to do the database connection and store other important configuration, see the docs [here](https://loopback.io/doc/en/lb2/Advanced-topics-data-sources.html). The datasource need to be configured with your own properties values. The current file you find [here](https://github.com/tiaghoalves/coo-homeless-api/blob/master/server/datasources.json) 
 
 As you can see, here we're using two ways to persist data between the server API and databases. Actually, there's a in memory database named `db`, which is a default option to store models and things that doesnt need to be in database. You may not change that to do alteration in the src.
 
