@@ -4,6 +4,8 @@
 			"loopback/common/models",
 			"loopback/server/models",
 			"../common/models",
+			"../common/base",
+			"../common/models/user",
 			"./models/contributor",
 			"./models/localization",
 			"./models/donation",
@@ -38,6 +40,10 @@
 		}
 	},
 	"Role": {
+		"dataSource": "db",
+		"public": false
+	},
+	"BasePersistedModel": {
 		"dataSource": "db",
 		"public": false
 	},

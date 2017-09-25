@@ -1,7 +1,6 @@
 'use strict';
 
-module.exports = (Contributor) => {
-
+export default (Contributor) => {
 	Contributor.defaultData = [
 		{
 			"id_contributor": 0,

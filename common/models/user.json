@@ -1,0 +1,67 @@
+{
+    "name": "user",
+    "plural": "users",
+    "base": "User",
+    "idInjection": false,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "id_user": {
+            "type": "number",
+            "id": true,
+            "required": true
+        },
+        "full_name": {
+            "type": "string",
+            "required": true
+        },
+        "login": {
+            "type": "string",
+
+            "required": true
+        },
+        "email": {
+            "type": "string",
+            "required": true
+        },
+        "password": {
+            "type": "string",
+            "required": true
+        },
+        "url_profile_image": {
+            "type": "string"
+        },
+        "user_type": {
+            "type": "number"
+        },
+        "created_at": {
+            "type": "date"
+        },
+        "updated_at": {
+            "type": "date"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "stores": {
+            "type": "hasMany",
+            "model": "store",
+            "foreignKey": "id_user",
+            "through": "user_store",
+            "keyThrough": "id_store"
+        },
+		"sales": {
+			"type": "hasMany",
+            "model": "sale",
+            "foreignKey": "id_user"
+		},
+		"fin_transaction_files": {
+			"type": "hasMany",
+            "model": "store_fin_transaction_file",
+            "foreignKey": "id_user"
+		}
+    },
+    "acls": [],
+    "methods": {}
+}
