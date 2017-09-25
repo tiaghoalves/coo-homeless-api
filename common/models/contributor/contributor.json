@@ -1,11 +1,7 @@
 {
 	"name": "contributor",
 	"plural": "contributors",
-	"base": "PersistedModel",
-	"idInjection": false,
-	"options": {
-		"validateUpsert": true
-	},
+	"base": "BasePersistedModel",
 	"properties": {
 		"id_contributor": {
 			"type": "number",
@@ -20,8 +16,7 @@
 		}
 	},
 	"validations": [],
-	"relations": {
-	},
+	"relations": {},
 	"acls": [],
 	"methods": {}
 }
