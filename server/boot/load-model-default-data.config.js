@@ -1,6 +1,6 @@
 import async from 'async';
 
-module.exports = (app) => {
+export default (app) => {
 	let models = [];
 	let calls = [];
 
@@ -17,6 +17,8 @@ module.exports = (app) => {
 			}
 		});
 	}
+
+
 
 	async.parallel(calls, (err, data) => {
 		if (err) {
