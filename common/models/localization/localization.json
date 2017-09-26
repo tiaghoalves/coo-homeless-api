@@ -1,11 +1,7 @@
 {
 	"name": "localization",
 	"plural": "localizations",
-	"base": "PersistedModel",
-	"idInjection": false,
-	"options": {
-		"validateUpsert": true
-	},
+	"base": "BasePersistedModel",
 	"properties": {
 		"id_localization": {
 			"type": "number",
