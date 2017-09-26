@@ -6,13 +6,13 @@
 			"../common/models",
 			"../common/base",
 			"../common/models/user",
-			"./models/contributor",
-			"./models/localization",
-			"./models/donation",
-			"./models/homeless",
-			"./models/meeting",
-			"./models/organization",
-			"./models"
+			"../common/models/contributor",
+			"../common/models/localization",
+			"../common/models/donation",
+			"../common/models/homeless",
+			"../common/models/meeting",
+			"../common/models/organization",
+			"../common/models"
 		],
 		"mixins": [
 			"loopback/common/mixins",
