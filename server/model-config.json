@@ -54,5 +54,17 @@
 	"localization": {
 		"dataSource": "db",
 		"public": true
+	},
+	"organization": {
+		"dataSource": "db",
+		"public": true
+	},
+	"donation": {
+		"dataSource": "db",
+		"public": true
+	},
+	"donation_status": {
+		"dataSource": "db",
+		"public": true
 	}
 }
