@@ -1,0 +1,22 @@
+{
+	"name": "donation",
+	"plural": "donations",
+	"base": "BasePersistedModel",
+	"properties": {
+		"id_donation": {
+			"type": "number",
+			"required": true,
+			"id": true
+		}
+	},
+	"validations": [],
+	"relations": {
+        "status": {
+            "type": "hasMany",
+            "model": "donation_status",
+            "foreignKey": "id_donation_status"
+        }
+    },
+	"acls": [],
+	"methods": {}
+}
