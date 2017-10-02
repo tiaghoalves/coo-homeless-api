@@ -55,11 +55,6 @@
 			"type": "hasMany",
             "model": "sale",
             "foreignKey": "id_user"
-		},
-		"fin_transaction_files": {
-			"type": "hasMany",
-            "model": "store_fin_transaction_file",
-            "foreignKey": "id_user"
 		}
     },
     "acls": [],
