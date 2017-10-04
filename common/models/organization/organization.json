@@ -9,10 +9,12 @@
 			"id": true
 		},
 		"name": {
-			"type": "string"
+			"type": "string",
+			"required": true
 		},
 		"desc_organization": {
-			"type": "string"
+			"type": "string",
+			"required": true
         },
 		"cnpj": {
 			"type": "string"
