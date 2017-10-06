@@ -1,4 +1,4 @@
-var assert = require('assert');
+import assert from 'assert';
 
 describe('Array', function() {
     describe('#indexOf()', function() {

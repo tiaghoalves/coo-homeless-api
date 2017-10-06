@@ -8,8 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "nodemon --exec babel-node .",
-    "posttest": "npm run lint && nsp check",
-    "test": "mocha --timeout 5000"
+    "test": "mocha --compilers js:babel-core/register --timeout 5000"
   },
   "dependencies": {
     "async": "^2.5.0",
