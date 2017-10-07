@@ -18,7 +18,6 @@
         },
         "login": {
             "type": "string",
-
             "required": true
         },
         "email": {
@@ -44,17 +43,15 @@
     },
     "validations": [],
     "relations": {
-        "stores": {
+        "contributors": {
             "type": "hasMany",
-            "model": "store",
-            "foreignKey": "id_user",
-            "through": "user_store",
-            "keyThrough": "id_store"
+            "model": "contributor",
+            "foreignKey": "id_contributor"
         },
-		"sales": {
+		"organizations": {
 			"type": "hasMany",
-            "model": "sale",
-            "foreignKey": "id_user"
+            "model": "organization",
+            "foreignKey": "id_organization"
 		}
     },
     "acls": [],

@@ -155,15 +155,17 @@ export default (User) => {
                                 return cb(err);
                             }
 
-                            const success = {};
-                            success.code = 'SUCCESS';
-                            success.message = 'Senha alterada com sucesso!';
+                            const success = {
+                                code: 'SUCCESS',
+                                message: 'Senha alterada com sucesso!'
+                            };
                             return cb(null, success);
                         });
                     } else {
-                        var err = {};
-                        err.code = 'OLD_PASSWORD_MATCH';
-                        err.message = 'A senha anterior não confere!';
+                        var err = {
+                            code: 'OLD_PASSWORD_MATCH',
+                            message: 'A senha anterior não confere!'
+                        };
                         return cb(null, err);
                     }
                 });
