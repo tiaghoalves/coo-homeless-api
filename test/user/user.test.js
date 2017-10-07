@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var supertest = require('supertest');
 var assert = require('assert');
-var api = supertest('http://localhost:3000/api/');
+var api = supertest('http://localhost:3000/api');
 
 describe('Authentication User', function() {
 
@@ -13,6 +13,7 @@ describe('Authentication User', function() {
             .expect(200)
             .then(function (res) {
                 expect(res.body).to.be.instanceof(Object);
+                done();
             });
     });
 

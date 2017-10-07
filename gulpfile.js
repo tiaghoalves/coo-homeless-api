@@ -16,3 +16,5 @@ gulp.task('test', function (cb) {
       cb();
     });
 });
+
+gulp.task('default', ['test']);
