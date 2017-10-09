@@ -14,13 +14,13 @@ describe('Contributor', function() {
         });
 
         it('success without any auth', function(done) {
-            api.get('/contributors')
+            api.get('/contributor')
                 .auth('incorrect', 'credentials')
                 .expect(200, done);
         });
 
         it('success if bad x-api-key header', function(done) {
-            api.get('/contributors')
+            api.get('/contributor')
                 .auth('correct', 'credentials')
                 .expect(200)
                 .then(function (res) {
@@ -32,7 +32,7 @@ describe('Contributor', function() {
 
     describe('GET /contributors', function() {
         it('GET should get all Contributors', function(done) {
-            api.get('/contributors')
+            api.get('/contributor')
                 .expect('Content-Type', /json/)
                 .expect(200)
                 .end(function(err, res) {
@@ -44,7 +44,7 @@ describe('Contributor', function() {
         });
 
         it('GET should get all contributors and expect not to be 1 or 2', function(done) {
-            api.get('/contributors')
+            api.get('/contributor')
                 .expect('Content-Type', /json/)
                 .expect(200)
                 .end(function(err, res) {
@@ -56,7 +56,7 @@ describe('Contributor', function() {
         });
 
         it('GET should get all contributors expect to be Array', function(done) {
-            api.get('/contributors')
+            api.get('/contributor')
                 .expect('Content-Type', /json/)
                 .expect(200)
                 .end(function(err, res) {
