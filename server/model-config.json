@@ -10,7 +10,7 @@
 			"../common/models/localization",
 			"../common/models/donation",
 			"../common/models/homeless",
-			"../common/models/meeting",
+			"../common/models/meeting_point",
 			"../common/models/organization",
 			"../common/models"
 		],
@@ -26,7 +26,7 @@
 	},
 	"AccessToken": {
 		"dataSource": "db",
-		"public": false
+		"public": true
 	},
 	"ACL": {
 		"dataSource": "db",
@@ -64,6 +64,18 @@
 		"public": true
 	},
 	"donation_status": {
+		"dataSource": "db",
+		"public": true
+	},
+	"homeless": {
+		"dataSource": "db",
+		"public": true
+	},
+	"homeless_info": {
+		"dataSource": "db",
+		"public": true
+	},
+	"meeting_point": {
 		"dataSource": "db",
 		"public": true
 	}
