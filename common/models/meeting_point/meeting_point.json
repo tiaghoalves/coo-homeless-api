@@ -1,0 +1,33 @@
+{
+	"name": "meeting_point",
+	"plural": "meeting_point",
+	"base": "BasePersistedModel",
+	"properties": {
+		"id_meeting_point": {
+			"type": "number",
+			"required": true,
+			"id": true
+		},
+        "created_at": {
+            "type": "date"
+        },
+        "updated_at": {
+            "type": "date"
+        }
+	},
+	"validations": [],
+	"relations": {
+		"users": {
+			"type": "belongsTo",
+			"model": "user",
+			"foreignKey": "id_user"
+        },
+        "homeless": {
+            "type": "belongsTo",
+			"model": "homeless",
+			"foreignKey": "id_homeless"
+        }
+	},
+	"acls": [],
+	"methods": {}
+}

@@ -1,0 +1,49 @@
+{
+	"name": "homeless_info",
+	"plural": "homeless_info",
+	"base": "BasePersistedModel",
+	"properties": {
+		"id_homeless_info": {
+			"type": "number",
+			"required": true,
+			"id": true
+        },
+        "gender": {
+            "type": "string" 
+        },
+        "birth_date": {
+            "type": "date"
+        },
+        "hair_color": {
+            "type": "string"
+        },
+        "hair_type": {
+            "type": "string"
+        },
+        "eyes": {
+            "type": "string"
+        },
+        "etnia": {
+            "type": "string"
+        },
+        "physical_type": {
+            "type": "string"
+        },
+		"created_at": {
+			"type": "date"
+		},
+		"updated_at": {
+			"type": "date"
+		}
+	},
+	"validations": [],
+	"relations": {
+		"contributors": {
+			"type": "hasOne",
+			"model": "contributor",
+			"foreignKey": "id_contributor"
+		}
+	},
+	"acls": [],
+	"methods": {}
+}

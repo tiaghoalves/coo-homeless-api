@@ -1,0 +1,46 @@
+{
+	"name": "homeless",
+	"plural": "homeless",
+	"base": "BasePersistedModel",
+	"properties": {
+		"id_homeless": {
+			"type": "number",
+			"required": true,
+			"id": true
+		},
+		"name": {
+			"type": "string"
+		},
+		"anonymous": {
+			"type": "string",
+			"required": true
+		},
+        "photo": {
+            "type": "string"
+        },
+        "background": {
+            "type": "string"
+        },
+        "status_type": {
+            "type": "string"
+        },
+		"created_at": {
+			"type": "date"
+		},
+		"updated_at": {
+			"type": "date"
+		}
+	},
+	"validations": [],
+	"relations": {
+        "users": {
+            "type": "hasMany",
+            "model": "user",
+            "foreignKey": "id_user",
+            "through": "meeting_point",
+            "keyThrough": "id_meeting_point"
+        }
+	},
+	"acls": [],
+	"methods": {}
+}

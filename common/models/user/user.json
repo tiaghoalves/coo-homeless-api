@@ -49,7 +49,14 @@
 			"type": "hasMany",
             "model": "organization",
             "foreignKey": "id_organization"
-		}
+        },
+        "homeless": {
+            "type": "hasMany",
+            "model": "homeless",
+            "foreignKey": "id_homeless",
+            "through": "meeting_point",
+            "keyThrough": "id_meeting_point"
+        }
     },
     "acls": [],
     "methods": {}

@@ -1,6 +1,6 @@
 {
 	"name": "donation",
-	"plural": "donations",
+	"plural": "donation",
 	"base": "BasePersistedModel",
 	"properties": {
 		"id_donation": {
