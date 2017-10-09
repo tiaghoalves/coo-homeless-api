@@ -78,5 +78,9 @@
 	"meeting_point": {
 		"dataSource": "db",
 		"public": true
+	},
+	"user": {
+		"dataSource": "db",
+		"public": true
 	}
 }
