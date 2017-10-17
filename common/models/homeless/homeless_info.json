@@ -1,6 +1,6 @@
 {
 	"name": "homeless_info",
-	"plural": "homeless_info",
+	"plural": "homeless_infos",
 	"base": "BasePersistedModel",
 	"properties": {
 		"id_homeless_info": {

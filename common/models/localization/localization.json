@@ -1,6 +1,6 @@
 {
 	"name": "localization",
-	"plural": "localization",
+	"plural": "localizations",
 	"base": "BasePersistedModel",
 	"properties": {
 		"id_localization": {

@@ -1,6 +1,6 @@
 {
 	"name": "meeting_point",
-	"plural": "meeting_point",
+	"plural": "meeting_points",
 	"base": "BasePersistedModel",
 	"properties": {
 		"id_meeting_point": {

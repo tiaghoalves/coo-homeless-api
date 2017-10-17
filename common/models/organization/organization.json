@@ -1,6 +1,6 @@
 {
 	"name": "organization",
-	"plural": "organization",
+	"plural": "organizations",
 	"base": "BasePersistedModel",
 	"properties": {
 		"id_organization": {

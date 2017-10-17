@@ -1,6 +1,6 @@
 {
 	"name": "contributor",
-	"plural": "contributor",
+	"plural": "contributors",
 	"base": "BasePersistedModel",
 	"properties": {
 		"id_contributor": {
