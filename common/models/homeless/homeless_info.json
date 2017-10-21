@@ -38,10 +38,10 @@
 	},
 	"validations": [],
 	"relations": {
-		"contributors": {
-			"type": "hasOne",
-			"model": "contributor",
-			"foreignKey": "id_contributor"
+		"homeless": {
+			"type": "belongsTo",
+			"model": "homeless",
+			"foreignKey": "id_homeless_"
 		}
 	},
 	"acls": [],

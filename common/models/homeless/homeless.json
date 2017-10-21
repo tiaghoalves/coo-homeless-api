@@ -13,7 +13,8 @@
 		},
 		"anonymous": {
 			"type": "string",
-			"required": true
+			"required": true,
+			"default": "Y"
 		},
         "photo": {
             "type": "string"
@@ -39,7 +40,12 @@
             "foreignKey": "id_user",
             "through": "meeting_point",
             "keyThrough": "id_meeting_point"
-        }
+		},
+		"homeless_infos": {
+			"type": "hasOne",
+			"model": "homeless_info",
+			"foreignKey": "id_homeless_info"
+		}
 	},
 	"acls": [],
 	"methods": {}
