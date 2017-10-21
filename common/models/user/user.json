@@ -31,6 +31,10 @@
         "url_profile_image": {
             "type": "string"
         },
+        "user_type": {
+            "type": "number",
+            "required": true
+        },
         "created_at": {
             "type": "date"
         },
