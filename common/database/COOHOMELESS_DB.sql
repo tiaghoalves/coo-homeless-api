@@ -1,4 +1,4 @@
--- Create a new database called 'COO_HOMELESS_DB'
+-- Create a new database called 'COOHOMELESS_DB'
 -- Connect to the 'master' database to run this snippet
 CREATE DATABASE IF NOT EXISTS COOHOMELESS_DB;
 USE COOHOMELESS_DB;
