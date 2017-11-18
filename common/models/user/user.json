@@ -15,16 +15,8 @@
         "full_name": {
             "type": "string",
             "required": true
-        },
-        "login": {
-            "type": "string",
-            "required": true
-        },
-        "email": {
-            "type": "string",
-            "required": true
-        },
-        "password": {
+		},
+		"email": {
             "type": "string",
             "required": true
         },
@@ -32,8 +24,7 @@
             "type": "string"
         },
         "user_type": {
-            "type": "number",
-            "required": true
+            "type": "number"
         },
         "created_at": {
             "type": "date"
