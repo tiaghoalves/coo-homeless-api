@@ -7,7 +7,7 @@
 	},
 	"scripts": {
 		"lint": "eslint .",
-		"start": "nodemon --exec babel-node ./server/server.js",
+		"start": "nodemon --exec babel-node .",
 		"test": "mocha --compilers js:babel-core/register --timeout 5000 --reporter spec --recursive"
 	},
 	"dependencies": {
