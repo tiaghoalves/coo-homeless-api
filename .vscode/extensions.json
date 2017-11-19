@@ -6,6 +6,7 @@
 		"nwhatt.chai-snippets",
 		"spoonscen.es6-mocha-snippets",
 		"EditorConfig.editorconfig",
-		"xabikos.javascriptsnippets"
+		"xabikos.javascriptsnippets",
+		"sequoia.loopback-json-schemas"
 	]
 }
