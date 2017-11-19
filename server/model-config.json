@@ -7,7 +7,7 @@
 			"../common/base",
 			"../common/models/user",
 			"../common/models/contributor",
-			"../common/models/localization",
+			"../common/models/location",
 			"../common/models/donation",
 			"../common/models/homeless",
 			"../common/models/meeting_point",
@@ -48,14 +48,18 @@
 		"public": false
 	},
 	"contributor": {
-		"dataSource": "db",
-		"public": true
-	},
-	"localization": {
-		"dataSource": "db",
+		"dataSource": "CooHomelessMysql",
 		"public": true
 	},
 	"organization": {
+		"dataSource": "CooHomelessMysql",
+		"public": true
+	},
+	"location_contributor": {
+		"dataSource": "db",
+		"public": true
+	},
+	"location_ong": {
 		"dataSource": "db",
 		"public": true
 	},
@@ -75,7 +79,11 @@
 		"dataSource": "db",
 		"public": true
 	},
-	"meeting_point": {
+	"meeting_point_contributor": {
+		"dataSource": "db",
+		"public": true
+	},
+	"meeting_point_ong": {
 		"dataSource": "db",
 		"public": true
 	},
