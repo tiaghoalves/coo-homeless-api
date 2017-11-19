@@ -1,13 +1,8 @@
 {
 	"name": "location_ong",
 	"plural": "location_ongs",
-	"base": "BasePersistedModel",
+	"base": "PersistedModel",
 	"properties": {
-		"id_location_ong": {
-			"type": "number",
-			"required": true,
-			"id": true
-		},
 		"location": {
 			"type": "geopoint"
 		},
@@ -23,12 +18,12 @@
 		"organizations": {
 			"type": "hasOne",
 			"model": "organization",
-			"foreignKey": "id_organization"
+			"foreignKey": "id"
 		},
 		"meeting_point_ongs": {
 			"type": "hasOne",
 			"model": "meeting_point_ong",
-			"foreignKey": "id_meeting_point_ong"
+			"foreignKey": "id"
 		}
 	},
 	"acls": [],

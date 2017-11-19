@@ -1,15 +1,10 @@
 {
 	"name": "homeless_info",
 	"plural": "homeless_infos",
-	"base": "BasePersistedModel",
+	"base": "PersistedModel",
 	"properties": {
-		"id_homeless_info": {
-			"type": "number",
-			"required": true,
-			"id": true
-        },
         "gender": {
-            "type": "string" 
+            "type": "string"
         },
         "birth_date": {
             "type": "date"
@@ -41,7 +36,7 @@
 		"homeless": {
 			"type": "belongsTo",
 			"model": "homeless",
-			"foreignKey": "id_homeless_"
+			"foreignKey": "id"
 		}
 	},
 	"acls": [],

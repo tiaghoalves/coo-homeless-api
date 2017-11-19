@@ -1,13 +1,8 @@
 {
 	"name": "organization",
 	"plural": "organizations",
-	"base": "BasePersistedModel",
+	"base": "PersistedModel",
 	"properties": {
-		"id_organization": {
-			"type": "number",
-			"required": true,
-			"id": true
-		},
 		"name": {
 			"type": "string",
 			"required": true
@@ -17,6 +12,15 @@
 			"required": true
         },
 		"cnpj": {
+			"type": "string"
+		},
+		"email": {
+			"type": "string"
+		},
+		"endereco": {
+			"type": "string"
+		},
+		"fone": {
 			"type": "string"
 		}
 	},

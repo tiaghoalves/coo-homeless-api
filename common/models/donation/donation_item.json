@@ -1,6 +1,6 @@
 {
-	"name": "donation_status",
-	"plural": "donation_statuses",
+	"name": "donation_item",
+	"plural": "donation_items",
 	"base": "PersistedModel",
 	"properties": {
         "type": {

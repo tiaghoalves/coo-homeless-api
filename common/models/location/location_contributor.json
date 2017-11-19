@@ -1,13 +1,8 @@
 {
 	"name": "location_contributor",
 	"plural": "location_contributors",
-	"base": "BasePersistedModel",
+	"base": "PersistedModel",
 	"properties": {
-		"id_location_contributor": {
-			"type": "number",
-			"required": true,
-			"id": true
-		},
 		"location": {
 			"type": "geopoint"
 		},
@@ -23,12 +18,12 @@
 		"contributors": {
 			"type": "hasOne",
 			"model": "contributor",
-			"foreignKey": "id_contributor"
+			"foreignKey": "id"
 		},
 		"meeting_point_contributors": {
 			"type": "hasOne",
 			"model": "meeting_point_contributor",
-			"foreignKey": "id_meeting_point_contributor"
+			"foreignKey": "id"
 		}
 	},
 	"acls": [],

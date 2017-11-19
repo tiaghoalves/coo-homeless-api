@@ -1,13 +1,8 @@
 {
 	"name": "homeless",
 	"plural": "homeless",
-	"base": "BasePersistedModel",
+	"base": "PersistedModel",
 	"properties": {
-		"id_homeless": {
-			"type": "number",
-			"required": true,
-			"id": true
-		},
 		"name": {
 			"type": "string"
 		},
@@ -37,21 +32,21 @@
         "contributors": {
             "type": "hasMany",
             "model": "contributor",
-            "foreignKey": "id_contributor",
+            "foreignKey": "id",
             "through": "meeting_point_contributor",
-            "keyThrough": "id_meeting_point_contributor"
+            "keyThrough": "id"
 		},
 		"organizations": {
             "type": "hasMany",
             "model": "organization",
-            "foreignKey": "id_organization",
+            "foreignKey": "id",
             "through": "meeting_point_ong",
-            "keyThrough": "id_meeting_point_ong"
+            "keyThrough": "id"
 		},
 		"homeless_infos": {
 			"type": "hasOne",
 			"model": "homeless_info",
-			"foreignKey": "id_homeless_info"
+			"foreignKey": "id"
 		}
 	},
 	"acls": [],

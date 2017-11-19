@@ -1,12 +1,13 @@
 {
 	"name": "donation",
 	"plural": "donations",
-	"base": "BasePersistedModel",
+	"base": "PersistedModel",
 	"properties": {
-		"id_donation": {
-			"type": "number",
-			"required": true,
-			"id": true
+		"created_at": {
+			"type": "date"
+		},
+		"updated_at": {
+			"type": "date"
 		}
 	},
 	"validations": [],
@@ -14,8 +15,13 @@
         "status": {
             "type": "hasMany",
             "model": "donation_status",
-            "foreignKey": "id_donation_status"
-        }
+            "foreignKey": "id"
+		},
+		"items": {
+			"type": "hasMany",
+			"model": "donation_item",
+			"foreignKey": "id"
+		}
     },
 	"acls": [],
 	"methods": {}

@@ -1,7 +1,7 @@
 'use strict';
 
-export default (DonationStatus) =>  {
-    DonationStatus.defaultData = [
+export default (DonationItem) =>  {
+    DonationItem.defaultData = [
         {
             "type": "FAIL"
         },
