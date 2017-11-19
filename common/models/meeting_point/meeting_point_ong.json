@@ -1,0 +1,33 @@
+{
+	"name": "meeting_point_ong",
+	"plural": "meeting_point_ongs",
+	"base": "BasePersistedModel",
+	"properties": {
+		"id_meeting_point_organization": {
+			"type": "number",
+			"required": true,
+			"id": true
+		},
+        "created_at": {
+            "type": "date"
+        },
+        "updated_at": {
+            "type": "date"
+        }
+	},
+	"validations": [],
+	"relations": {
+		"organizations": {
+			"type": "belongsTo",
+			"model": "organization",
+			"foreignKey": "id_organization"
+        },
+        "homeless": {
+            "type": "belongsTo",
+			"model": "homeless",
+			"foreignKey": "id_homeless"
+        }
+	},
+	"acls": [],
+	"methods": {}
+}

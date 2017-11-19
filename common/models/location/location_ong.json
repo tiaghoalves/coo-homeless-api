@@ -1,9 +1,9 @@
 {
-	"name": "localization",
-	"plural": "localizations",
+	"name": "location_ong",
+	"plural": "location_ongs",
 	"base": "BasePersistedModel",
 	"properties": {
-		"id_localization": {
+		"id_location_ong": {
 			"type": "number",
 			"required": true,
 			"id": true
@@ -20,10 +20,15 @@
 	},
 	"validations": [],
 	"relations": {
-		"contributors": {
+		"organizations": {
 			"type": "hasOne",
-			"model": "contributor",
-			"foreignKey": "id_contributor"
+			"model": "organization",
+			"foreignKey": "id_organization"
+		},
+		"meeting_point_ongs": {
+			"type": "hasOne",
+			"model": "meeting_point_ong",
+			"foreignKey": "id_meeting_point_ong"
 		}
 	},
 	"acls": [],

@@ -9,7 +9,8 @@
 			"id": true
 		},
 		"name": {
-			"type": "string"
+			"type": "string",
+			"required": true
 		},
 		"cpf": {
 			"type": "string"
@@ -17,11 +18,13 @@
 	},
 	"validations": [],
 	"relations": {
-		"users": {
-			"type": "belongsTo",
-			"model": "user",
-			"foreignKey": "id_user"
-		}
+		"homeless": {
+            "type": "hasMany",
+            "model": "homeless",
+            "foreignKey": "id_homeless",
+            "through": "meeting_point_contributor",
+            "keyThrough": "id_meeting_point_contributor"
+        }
 	},
 	"acls": [],
 	"methods": {}

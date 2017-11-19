@@ -34,12 +34,19 @@
 	},
 	"validations": [],
 	"relations": {
-        "users": {
+        "contributors": {
             "type": "hasMany",
-            "model": "user",
-            "foreignKey": "id_user",
-            "through": "meeting_point",
-            "keyThrough": "id_meeting_point"
+            "model": "contributor",
+            "foreignKey": "id_contributor",
+            "through": "meeting_point_contributor",
+            "keyThrough": "id_meeting_point_contributor"
+		},
+		"organizations": {
+            "type": "hasMany",
+            "model": "organization",
+            "foreignKey": "id_organization",
+            "through": "meeting_point_ong",
+            "keyThrough": "id_meeting_point_ong"
 		},
 		"homeless_infos": {
 			"type": "hasOne",

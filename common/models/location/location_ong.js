@@ -1,21 +1,21 @@
 'use strict';
 
-module.exports = (Localization) => {
+module.exports = (LocationOng) => {
 	// define remote method
-	Localization.getLocation = (data) => {
+	LocationOng.getLocation = (data) => {
 		return new Promise((resolve, reject) => {
 			resolve(data);
 		});
 	};
 
 	// expose remote method
-	Localization.remoteMethod('getLocation', {
+	LocationOng.remoteMethod('getLocation', {
 		accepts: { arg: 'data', type: 'object', http: { source: 'body' } },
 		returns: { arg: 'data', type: 'object', root: true },
 		http: { path: '/find', verb: 'post' },
 	});
 
-	Localization.remoteMethod('getNearbyLocation', {
+	LocationOng.remoteMethod('getNearbyLocation', {
 		accepts: { arg: 'loc', type: 'GeoPoint' },
 		returns: { arg: 'location', type: 'GeoPoint' }
 	});

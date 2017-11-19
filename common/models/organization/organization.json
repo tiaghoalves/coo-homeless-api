@@ -22,11 +22,13 @@
 	},
 	"validations": [],
 	"relations": {
-		"users": {
-			"type": "belongsTo",
-			"model": "user",
-			"foreignKey": "id_user"
-		}
+		"homeless": {
+            "type": "hasMany",
+            "model": "homeless",
+            "foreignKey": "id_homeless",
+            "through": "meeting_point_ong",
+            "keyThrough": "id_meeting_point_ong"
+        }
 	},
 	"acls": [],
 	"methods": {}
