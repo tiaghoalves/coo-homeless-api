@@ -7,6 +7,7 @@
 		"spoonscen.es6-mocha-snippets",
 		"EditorConfig.editorconfig",
 		"xabikos.javascriptsnippets",
-		"sequoia.loopback-json-schemas"
+		"sequoia.loopback-json-schemas",
+		"PKief.material-icon-theme"
 	]
 }
