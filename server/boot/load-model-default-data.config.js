@@ -4,13 +4,13 @@ export default (app) => {
 	let models = [];
 	let calls = [];
 
-	models.push(app.models.contributor);
-	models.push(app.models.organization);
+	// models.push(app.models.contributor);
+	// models.push(app.models.organization);
 	models.push(app.models.donation_status);
-	
+
 	if (models.length > 0) {
 		models[0].dataSource.setMaxListeners(0);
-		
+
 		models.forEach((model) => {
 			if (model.defaultData) {
 				model.defaultData.forEach((value) => {
