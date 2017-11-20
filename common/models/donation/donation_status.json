@@ -10,10 +10,10 @@
 	},
 	"validations": [],
 	"relations": {
-        "donation": {
+        "donations": {
             "type": "belongsTo",
             "model": "donation",
-            "foreignKey": "id"
+            "foreignKey": ""
         }
     },
 	"acls": [],

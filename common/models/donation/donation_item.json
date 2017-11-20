@@ -13,7 +13,7 @@
         "donation": {
             "type": "belongsTo",
             "model": "donation",
-            "foreignKey": "id"
+            "foreignKey": ""
         }
     },
 	"acls": [],

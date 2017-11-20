@@ -36,7 +36,7 @@
 		"homeless": {
 			"type": "belongsTo",
 			"model": "homeless",
-			"foreignKey": "id"
+			"foreignKey": ""
 		}
 	},
 	"acls": [],

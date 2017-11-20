@@ -32,21 +32,21 @@
         "contributors": {
             "type": "hasMany",
             "model": "contributor",
-            "foreignKey": "id",
+            "foreignKey": "",
             "through": "meeting_point_contributor",
-            "keyThrough": "id"
+            "keyThrough": ""
 		},
 		"organizations": {
             "type": "hasMany",
             "model": "organization",
-            "foreignKey": "id",
+            "foreignKey": "",
             "through": "meeting_point_ong",
-            "keyThrough": "id"
+            "keyThrough": ""
 		},
 		"homeless_infos": {
 			"type": "hasOne",
 			"model": "homeless_info",
-			"foreignKey": "id"
+			"foreignKey": ""
 		}
 	},
 	"acls": [],

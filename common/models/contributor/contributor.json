@@ -19,9 +19,8 @@
 		"homeless": {
             "type": "hasMany",
             "model": "homeless",
-            "foreignKey": "id",
-            "through": "meeting_point_contributor",
-            "keyThrough": "id"
+            "foreignKey": "id_contributor",
+            "through": "meeting_point_contributor"
         }
 	},
 	"acls": [],

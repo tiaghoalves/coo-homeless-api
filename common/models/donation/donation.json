@@ -15,12 +15,12 @@
         "status": {
             "type": "hasMany",
             "model": "donation_status",
-            "foreignKey": "id"
+            "foreignKey": ""
 		},
 		"items": {
 			"type": "hasMany",
 			"model": "donation_item",
-			"foreignKey": "id"
+			"foreignKey": ""
 		}
     },
 	"acls": [],

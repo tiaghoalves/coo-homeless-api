@@ -3,6 +3,9 @@
 	"plural": "meeting_point_ongs",
 	"base": "PersistedModel",
 	"properties": {
+		"location": {
+			"type": "geopoint"
+		},
         "created_at": {
             "type": "date"
         },
@@ -15,12 +18,12 @@
 		"organizations": {
 			"type": "belongsTo",
 			"model": "organization",
-			"foreignKey": "id"
+			"foreignKey": "id_organization"
         },
         "homeless": {
             "type": "belongsTo",
 			"model": "homeless",
-			"foreignKey": "id"
+			"foreignKey": "id_homeless"
         }
 	},
 	"acls": [],

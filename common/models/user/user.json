@@ -34,25 +34,7 @@
         }
     },
     "validations": [],
-    "relations": {
-        "contributors": {
-            "type": "hasMany",
-            "model": "contributor",
-            "foreignKey": "id_contributor"
-        },
-		"organizations": {
-			"type": "hasMany",
-            "model": "organization",
-            "foreignKey": "id_organization"
-        },
-        "homeless": {
-            "type": "hasMany",
-            "model": "homeless",
-            "foreignKey": "id_homeless",
-            "through": "meeting_point",
-            "keyThrough": "id_meeting_point"
-        }
-    },
+    "relations": {},
     "acls": [],
     "methods": {}
 }
