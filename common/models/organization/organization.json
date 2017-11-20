@@ -8,8 +8,7 @@
 			"required": true
 		},
 		"desc_organization": {
-			"type": "string",
-			"required": true
+			"type": "string"
         },
 		"cnpj": {
 			"type": "string"
