@@ -22,11 +22,12 @@
 		]
 	},
 	"User": {
-		"dataSource": "db"
+		"dataSource": "db",
+		"public": false
 	},
 	"AccessToken": {
 		"dataSource": "db",
-		"public": true
+		"public": false
 	},
 	"ACL": {
 		"dataSource": "db",
@@ -57,19 +58,19 @@
 	},
 	"location_contributor": {
 		"dataSource": "db",
-		"public": true
+		"public": false
 	},
 	"location_ong": {
 		"dataSource": "db",
-		"public": true
+		"public": false
 	},
 	"donation": {
 		"dataSource": "db",
-		"public": true
+		"public": false
 	},
 	"donation_status": {
 		"dataSource": "db",
-		"public": true
+		"public": false
 	},
 	"homeless": {
 		"dataSource": "db",
@@ -89,6 +90,6 @@
 	},
 	"user": {
 		"dataSource": "db",
-		"public": true
+		"public": false
 	}
 }
