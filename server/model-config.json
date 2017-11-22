@@ -73,19 +73,19 @@
 		"public": false
 	},
 	"homeless": {
-		"dataSource": "db",
+		"dataSource": "CooHomelessMysql",
 		"public": true
 	},
 	"homeless_info": {
-		"dataSource": "db",
+		"dataSource": "CooHomelessMysql",
 		"public": true
 	},
 	"meeting_point_contributor": {
-		"dataSource": "db",
+		"dataSource": "CooHomelessMysql",
 		"public": true
 	},
 	"meeting_point_ong": {
-		"dataSource": "db",
+		"dataSource": "CooHomelessMysql",
 		"public": true
 	},
 	"user": {

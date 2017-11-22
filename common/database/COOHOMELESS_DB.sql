@@ -26,7 +26,7 @@ CREATE TABLE `organization` (
 CREATE TABLE `contributor` (
     ID INT NOT NULL AUTO_INCREMENT,
     `NAME` VARCHAR(100),
-    CPF VARCHAR(11),
+    CPF VARCHAR(50),
     EMAIL VARCHAR(100),
 	URI_PROFILE_IMAGE VARCHAR(255) DEFAULT '/path/to/default_contributor_pic',
 	PRIMARY KEY(ID)
