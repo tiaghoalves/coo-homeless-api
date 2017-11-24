@@ -6,7 +6,7 @@ install: npm install
 before_script:
   - npm install -g nodemon
 script:
-  - nodemon --exec babel-node .
+  - gulp
 cache:
   directories:
     - node_modules
