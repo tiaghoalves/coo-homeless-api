@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - "node"
+install: npm install
+before_script:
+  - npm install -g nodemon
+script:
+  - nodemon --exec babel-node .
+cache:
+  directories:
+    - node_modules
