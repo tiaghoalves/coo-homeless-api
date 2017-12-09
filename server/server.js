@@ -3,10 +3,6 @@
 import loopback from 'loopback';
 import boot from 'loopback-boot';
 
-// import http from 'http';
-// import https from 'https';
-// import sslConfig from './ssl-config';
-
 const app = module.exports = loopback();
 // start the web server
 app.start = () => {
