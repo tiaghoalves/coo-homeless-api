@@ -130,20 +130,20 @@ describe('Contributor', () => {
 				.end((err, res) => {
 					if (err) return done(err);
 					api.delete('/contributors/'+ res.body[0].id_contributor)
-					.set('authorization', token)
-					.expect('Content-Type', /json/)
-					.expect(200)
-					.end((err, res) => {
-						if (err) return done(err);
-						res.should.have.status(200);
-						res.should.be.json;
-						res.body.should.be.a('object');
-						res.body.should.have.property('REMOVED');
-						res.body.REMOVED.should.be.a('object');
-						res.body.REMOVED.should.have.property('name');
-						res.body.REMOVED.should.have.property('id_contributor');
-						res.body.REMOVED.name.should.equal('Veneeeeeno de Oliveira');
-						done();
+						.set('authorization', token)
+						.expect('Content-Type', /json/)
+						.expect(200)
+						.end((err, res) => {
+							if (err) return done(err);
+							res.should.have.status(200);
+							res.should.be.json;
+							res.body.should.be.a('object');
+							res.body.should.have.property('REMOVED');
+							res.body.REMOVED.should.be.a('object');
+							res.body.REMOVED.should.have.property('name');
+							res.body.REMOVED.should.have.property('id_contributor');
+							res.body.REMOVED.name.should.equal('Veneeeeeno de Oliveira');
+							done();
 				});
 			});
 		});
